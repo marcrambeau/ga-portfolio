@@ -1,0 +1,150 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+body {
+     color: #000;
+     font-size: 18px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+header {
+     background-image: url(../images/header_bg.jpg);
+     background-size: cover;
+     background-position: top center;
+     background-attachment: fixed;
+     height: 600px;
+     padding: 20px 0 500px;
+}
+
+header p {
+     font-size: 48px;
+     padding: 100px 0 75px;
+     color: white;
+}
+
+header .inner {
+     text-align: center;
+}
+
+a {
+     text-decoration: none;
+     color: #033048;
+}
+
+.container {
+     width: 100%;
+     max-width: 960px;
+     margin: 0 auto;
+     padding-left: 16px;
+     padding-right: 16px;
+}
+
+.logo {
+     font-weight: 600;
+     font-size: 36px;
+     color: white;
+}
+
+.button {
+     display: inline-block;
+     padding: 20px 60px;
+     font-weight: 600;
+     text-align: center;
+     font-size: 30px;
+     background: #f9e42e;
+     color: #033048;
+     border-radius: 5px;
+}
+
+.benefits {
+     background: lightgrey;
+     padding: 75px 0;
+     color: #999;
+}
+
+.benefits h1 {
+     color: #033048;
+     font-weight: bold;
+     font-size: 36px;
+}
+
+.benefits p {
+     padding: 20px 0 50px;
+     font-size: 20px;
+}
+
+.benefits ul {
+     font-size: 22px;
+     list-style-type: disc;
+     padding-left: 40px;
+}
+
+.benefits .inner {
+     width: 600px;
+}
+
+.testimonial {
+     background-image: url(../images/testimonial_bg.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+     padding: 60px 0;
+     text-align: center;
+     color: white;
+     font-size: 32px;
+}
+
+.testimonial .container {
+     max-width: 750px;
+}
+
+blockquote {
+     font-weight: 300;
+     font-style: italic;
+}
+
+.testimonial span {
+     font-weight: 600;
+}
+
+.call {
+     background: #f9e42e;
+     text-align: center;
+     padding: 10px 0;
+}
+
+.call .button {
+     background: #033048;
+     color: white;
+}
+
+footer {
+     background: #121212;
+     color: white;
+     padding: 20px 0;
+     text-align: center;
+}
+
+footer .logo {
+     color: #f9e42e;
+}
+
+footer ul li {
+     display: inline-block;
+     padding: 40px 20px;
+}

@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin: 30px;
+}
+
+code {
+  background: rgba(0,0,0,.05);
+  padding: 1px 4px;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  margin: 0 1px;
+  white-space: nowrap;
+}
+
+#notification {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.message {
+  background: #ffe;
+  padding: 15px;
+  border: 2px solid #ccb;
+  margin: 10px 0;
+}
+
+.error {
+  background: #fee;
+  border-color: #c66;
+}

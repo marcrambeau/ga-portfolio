@@ -1,0 +1,107 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+ul {
+	margin: 0;
+}
+
+.inner,
+.hero {
+	padding: 140px 100px;
+}
+
+header, 
+.hero,
+.inner,
+footer {
+	border: 2px solid #000;
+}
+
+header,
+.hero,
+.content {
+	margin-bottom: 20px;
+}
+
+.thin-border {
+	border: 1px solid #000;
+}
+
+header {
+	padding: 20px;
+}
+
+nav {
+	float: left;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	padding: 20px 40px;
+}
+
+header span {
+	float: right;
+	padding: 5px;
+	font-size: 20px;
+	visibility: hidden;
+}
+
+.box {
+	float: left;
+	padding: 20px;
+	width: 25%;
+}
+
+.row {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+footer {
+	padding: 20px;
+}
+
+footer .box {
+	width: 33.333%;
+}
+
+@media screen and (max-width: 1040px) {
+	.box {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+		display: none;
+	}
+
+	header span {
+		visibility: visible;
+	}
+
+	.box,
+	footer .box {
+		width: 100%;
+	}
+}
+
+
